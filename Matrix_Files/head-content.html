@@ -1,0 +1,60 @@
+    
+<title>%frontend_asset_name% | %globals_site_name%</title>
+
+<!--@@ Misc Metadata @@-->
+<meta charset="utf-8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1.0>
+
+<!--@@ Global Default Metadata @@-->
+<meta name="dcterms.title"      content="%frontend_asset_name%">
+<meta name="dcterms.creator"    content="%globals_site_name%">
+<meta name="dcterms.created"    content="%frontend_asset_created^date_format:c%">
+<meta name="dcterms.modified"   content="%frontend_asset_updated^date_format:c%">
+<meta name="dcterms.issued"     content="%frontend_asset_published^date_format:c%">
+<meta name="dcterms.format"     content="HTML">
+<meta name="dcterms.identifier" content="%frontend_asset_url%">
+
+<!--@@ Custom Metadata @@-->
+%frontend_asset_frontend_metadata%
+
+<!--@@ Google+ Schema.org Data | https://developers.google.com/+/web/snippet/article-rendering @@-->
+<meta itemprop="name" content="%frontend_asset_name%" />
+<meta itemprop="description" content="%frontend_asset_metadata_description%" />
+<meta itemprop="image" content="%frontend_asset_thumbnail_url%" />
+
+<!--@@ Twitter Card Data | https://dev.twitter.com/cards/types/summary @@-->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@londonbushcraft" />
+<meta name="twitter:title" content="%frontend_asset_name%" />
+<meta name="twitter:description" content="%frontend_asset_metadata_description%" />
+<meta name="twitter:image" content="%frontend_asset_thumbnail_url%" />
+
+<!--@@ Open Graph Data | http://ogp.me/ @@-->
+<meta property="og:title" content="%frontend_asset_name%" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="%frontend_asset_url%" />
+<meta property="og:image" content="%frontend_asset_thumbnail_url%" />
+<meta property="og:description" content="%frontend_asset_metadata_description%" />
+<meta property="og:site_name" content="%globals_site_name%" />
+<meta property="article:published_time" content="%frontend_asset_published^date_format:c%" />
+<meta property="article:modified_time" content="%frontend_asset_updated^date_format:c%" />
+<meta property="article:section" content="%begin_frontend_asset_parent^eq:76%%frontend_asset_name%%else_frontend_asset_parent%%frontend_asset_parent^as_asset:asset_name%%end_frontend_asset_parent%" />
+<meta property="article:tag" content="%frontend_asset_metadata_keywords^replace:;:%" />
+
+<!--@@ Google Site Verification @@-->
+<!--@@
+<meta name="google-site-verification" content="" />
+@@-->
+
+<!--@@ CSS @@-->
+<link href="./?a=133?v=%globals_asset_version:133%" rel="stylesheet">
+
+<!--@@ Fonts @@-->
+
+<!--@@ Favicons @@-->
+<link rel="shortcut icon" href="%globals_site_metadata_design.favicon^as_asset:asset_url%">
+<link rel="apple-touch-icon" href="%globals_site_metadata_design.favicon^as_asset:asset_url%">
+
+<!--@@ JavaScript@@-->
+<script src="./?a=146?v=%globals_asset_version:146%"></script>
