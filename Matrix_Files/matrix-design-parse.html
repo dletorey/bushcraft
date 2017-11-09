@@ -1,0 +1,46 @@
+<!--@@ Start Edit Plus @@-->
+<mysource_area id_name="editplusconfig" design_area="nest_content" print="no" />
+<mysource_area id_name="editplus" design_area="editplus">
+    <mysource_print id_name="editplusconfig" />
+</mysource_area>
+<!--@@ End Edit Plus @@-->
+<!doctype html>
+<html lang="en_GB">
+    <head></head>
+    <body>
+        <header>
+            <!--@@ start logo @@--><!--@@ end logo @@-->
+            <!--@@ start nav @@-->
+            <nav id="primary_nav_wrap">
+                <mysource_area id_name="menu" design_area="menu_normal">
+                    <mysource_set name="level" value="top" />
+                    <mysource_set name="show_subs" value="always" />
+                    <mysource_set name="settings.class.normal" value="" />
+                    <mysource_set name="settings.class.current" value="class='current-menu-item'" />
+                    <mysource_set name="settings.class.hierarchy" value="class='current-menu-item'" />
+                    <mysource_set name="settings.class.has_children" value="children" />
+                    <ul>
+                        <mysource_asset>
+                            <li <mysource_print var="settings.class" />>
+                                <a href="<mysource_print var='asset_url' />"><mysource_print var='asset_short_name' /></a>
+                                <mysource_sub design_area="menu_normal">
+                                    <mysource_set name="settings.subclass.normal" value="" />
+                                    <mysource_set name="settings.subclass.current" value="class='current-sub-item'" />
+                                    <mysource_set name="settings.subclass.hierarchy" value="class='current-sub-item'" />
+                                    <ul>
+                                        <mysource_asset>
+                                            <li <mysource_print var="settings.subclass" />>
+                                                <a href="<mysource_print var='asset_url' />"><mysource_print var='asset_short_name' /></a>
+                                            </li>
+                                        </mysource_asset>
+                                    </ul>
+                                </mysource_sub>
+                            </li>
+                        </mysource_asset>
+                    </ul>
+                </mysource_area>
+            </nav>
+            <!--@@ end nav @@-->
+        </header>
+    </body>
+</html>
