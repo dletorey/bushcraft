@@ -5,6 +5,14 @@
 	background-image:;
 }
 
+#banner .logo, #banner .heading {
+	float:left;
+}
+
 #banner img {
     height: 100%;
+}
+
+#banner .heading {
+    color: white;
 }
