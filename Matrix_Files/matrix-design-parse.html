@@ -6,7 +6,10 @@
 <!--@@ End Edit Plus @@-->
 <!doctype html>
 <html lang="en_GB">
-    <head></head>
+    <head>
+        <title><mysource_print id_name="__global__" var="asset_name" /> - <mysource_print id_name="__global__" var="site_name" /></title>
+        <mysource_area id_name="head_styles_and_scripts" design_area="nest_content" />
+    </head>
     <body>
         <header>
             <!--@@ start logo @@--><!--@@ end logo @@-->
@@ -42,5 +45,14 @@
             </nav>
             <!--@@ end nav @@-->
         </header>
+        <div id="content">
+            <main>
+                <h1><mysource_print id_name="__global__" var="asset_name" /></h1>
+                <mysource_area id_name="body" design_area="body" />
+            </main>
+            <aside></aside>
+        </div>
+        <footer></footer>
+        <mysource_area id_name="foot_scripts" design_area="nest_content" />
     </body>
 </html>
